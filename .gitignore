@@ -12,3 +12,4 @@ dbt_packages/
 logs/
 *.duckdb
 polaris/deployment/charts/
+trino/deployment/charts/
