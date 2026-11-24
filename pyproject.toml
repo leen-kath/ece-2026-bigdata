@@ -11,6 +11,8 @@ dependencies = [
     "dbt-duckdb>=1.11.0",
     "duckdb>=1.5.6",
     "faker>=40.37.0",
+    "pandas>=3.1.1",
+    "trino>=0.340.0",
 ]
 
 [project.scripts]
@@ -21,3 +23,8 @@ orders-report = "work.orders_report:main"
 [build-system]
 requires = ["uv_build>=0.12.10,<0.13.0"]
 build-backend = "uv_build"
+
+[dependency-groups]
+dev = [
+    "ipykernel>=7.4.0",
+]
